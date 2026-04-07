@@ -17,7 +17,6 @@ const allowedOrigins = [
   "http://localhost:3000", // frontend dev
   "http://localhost:5000", // backend dev
   "https://smart-quiz-system-uuqh.vercel.app",
-  "https://smart-quiz-system-uuqh-1gzketfmw-kunal-khutetas-projects.vercel.app"
 ];
 
 // ✅ CORS middleware
@@ -37,20 +36,20 @@ app.use(cors({
 }));
 
 
-// ✅ Body parser
+//  Body parser
 app.use(express.json());
 
-// ✅ Routes
+//  Routes
 app.use("/api/quiz", quizRoutes);
 app.use("/api/chatbot", chatRoutes);
 app.use("/api/referrals", referralRoutes);
 app.use("/api", authRoutes);
 app.use("/api/certificates", certificateRoutes);
 app.use("/api/dailyQuiz", dailyQuizRoutes);
-// ✅ Test route
+//  Test route
 app.get("/api/test", (req, res) => res.json({ msg: "Backend working 🔥" }));
 
-// ✅ Example quiz attempt route
+//  Example quiz attempt route
 app.get("/api/quiz/attempts/:id", async (req, res) => {
   try {
     const attempt = await QuizAttempt.findById(req.params.id);
@@ -62,7 +61,7 @@ app.get("/api/quiz/attempts/:id", async (req, res) => {
   }
 });
 
-// ✅ Connect DB and start server
+//  Connect DB and start server
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
