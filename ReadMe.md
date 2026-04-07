@@ -1,6 +1,6 @@
 # Smart Quiz System 🎯
 
-Hello! I'm Kunal Khuteta — a passionate BCA student and this is my **first full-stack project**, built using everything I’ve learned so far in web development. I wanted to create something real, meaningful, and technically challenging — and that’s how **Smart Quiz System** was born.
+Hello! I'm Kunal Vijayvargiya — a passionate BCA student and this is my **first full-stack project**, built using everything I’ve learned so far in web development. I wanted to create something real, meaningful, and technically challenging — and that’s how **Smart Quiz System** was born.
 
 ## 🚀 About the Project
 
@@ -63,7 +63,7 @@ This project helped me learn the **core working of frontend-backend integration*
 
 ```bash
 # Clone the repo
-git clone https://github.com/Kunalkhuteta/smart-quiz-system.git
+https://github.com/KunalVijayvargiya/Smart-Quiz-System.git
 cd smart-quiz-system
 
 # Install server dependencies
